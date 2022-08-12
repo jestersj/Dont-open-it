@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+body {
+    background-image: url("./space.jpg");
+    background-size: cover;
+}
+@keyframes slidetop {
+    from {
+        margin-top: 100%;
+
+    }
+    to {
+        margin-top: 30vh;
+    }
+}
+@keyframes slidebot {
+    from {
+        margin-top: 0%;
+
+    }
+    to {
+        margin-top: 30vh;
+    }
+}
+@keyframes slideleft {
+    from {
+        margin-left: 0%;
+
+    }
+    to {
+        margin-left: 0;
+    }
+}
+@keyframes slideright {
+    from {
+        margin-left: 100%;
+
+    }
+    to {
+        margin-left: 0;
+    }
+}
+@keyframes diagonalleft {
+    from {
+        margin-left: 100%;
+        margin-bottom: 0;
+        margin-top: 100%;
+
+    }
+    to {
+        margin-top: 30vh;
+    }
+}
+@keyframes diagonalright {
+    from {
+        margin-right: 100%;
+        margin-bottom: 100%;
+        margin-top: 0vh;
+
+    }
+    to {
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-top: 30vh;
+    }
+}
+.btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+.btn-large {
+    height: 300px;
+    width: 500px;
+    border-radius: 50px;
+    font-size: 60px;
+    transition: 0.5s;
+    border: none;
+}
+.btn-half1 {
+    height: 300px;
+    width: 250px;
+    border-radius: 50px 0 0 50px;
+    font-size: 60px;
+    transition: 0.5s;
+    border: none;
+}
+.btn-half2 {
+    height: 300px;
+    width: 250px;
+    border-radius: 0 50px 50px 0;
+    font-size: 60px;
+    transition: 0.5s;
+    border: none;
+}
+#dontPushIt {
+    display: inline-block;
+    line-height: 300px;
+    margin-top: 30vh;
+    background-color: #3b0b5c;
+    font-size: 60px;
+    text-align: center;
+    color: #e3b314;
+    box-shadow: 0px 0px 10px 6px rgba(59,11, 92, 0.5);
+
+    animation-duration: 2s;
+    animation-name: slidetop;
+}
+#dontPushIt:hover {
+    background-color: #290740;
+    color: #85690d;
+}
+#areYouSure {
+    display: none;
+    margin-top: 30vh;
+    background-color: #1c08a1;
+    font-size: 60px;
+    line-height: 300px;
+    color: #b05d04;
+    box-shadow: 0px 0px 10px 6px rgba(28,8, 161, 0.5);
+    text-align: center;
+
+    animation-duration: 2s;
+    animation-name: slidebot;
+}
+#areYouSure:hover {
+    background-color: #0f0457;
+    color: #693702;
+}
+#iHopeYouKnow {
+    display: none;
+    margin-top: 30vh;
+    background-color: #08d1a2;
+    font-size: 60px;
+    color: #f06954;
+    box-shadow: -6px 0px 10px 6px rgba(6, 199 , 154, 0.5);
+    text-align: center;
+    margin-left: 0;
+
+    animation-duration: 2s;
+    animation-name: slideleft;
+}
+#iHopeYouKnow:hover {
+    background-color: #04785d;
+    color: #8a3c30;
+}
+
+#whatYouAreDoing {
+    display: none;
+    margin-top: 30vh;
+    background-color: #08d1a2;
+    font-size: 60px;
+    color: #f06954;
+    box-shadow: 6px 0px 10px 6px rgba(6, 199 , 154, 0.5);
+    text-align: center;
+    margin-left: 0;
+
+    animation-duration: 2s;
+    animation-name: slideright;
+}
+#whatYouAreDoing:hover {
+    background-color: #04785d;
+    color: #8a3c30;
+}
+#ok {
+    display: none;
+    margin-top: 30vh;
+    background-color: #e3554b;
+    font-size: 60px;
+    color: #234178;
+    box-shadow: 0px 0px 10px 6px rgba(227,85, 75, 0.5);
+    text-align: center;
+
+    animation-duration: 2s;
+    animation-name: diagonalright;
+}
+#ok:hover {
+    background-color: #943731;
+    color: #142545;
+}
+#enjoy {
+    display: none;
+    margin-top: 30vh;
+    background-color: #3f942e;
+    font-size: 90px;
+    color: #6e2391;
+    box-shadow: 0px 0px 10px 6px rgba(63,148, 46, 0.5);
+    text-align: center;
+
+    animation-duration: 2s;
+    animation-name: diagonalleft;
+}
+#enjoy:hover {
+    background-color: #26591c;
+    color: #401354;
+}
+#rickrolled {
+    display: none;
+    margin-top: 30vh;
+    animation-duration: 2s;
+    animation-name: slidetop;
+}
